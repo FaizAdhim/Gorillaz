@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="player">
+        <div class="track-list">
+          <ul>
+            <li onclick="playSong('music/Feel Good Inc.mp3')">Feel Good Inc</li>
+            <li onclick="playSong('music/On Melancholy Hill.mp3')">On Melancholy Hill</li>
+            <li onclick="playSong('music/Clint Eastwood.mp3')">Clint Eastwood</li>
+            <li onclick="playSong('music/DARE.mp3')">DARE</li>
+            <li onclick="playSong('music/Rhinestone Eyes.mp3')">Rhinestone Eyes</li>
+            <li onclick="playSong('music/Shes My Collar.mp3')">She's My Collar</li>
+            <li onclick="playSong('music/Dirty Harry.mp3')">Dirty Harry</li>
+            <li onclick="playSong('music/New Gold.mp3')">New Gold</li>
+            <li onclick="playSong('music/19-2000.mp3')">19-2000</li>
+            <li onclick="playSong('music/Tormenta.mp3')">Tormenta</li>
+          </ul>
+        </div>
+ 
+        <audio id="audioPlayer" controls>
+          <source id="audioSource" src="song1.mp3" type="audio/mp3">
+        </audio>
+      </div>     
+
+      <!-- Audio Element -->
+    <audio id="audioPlayer">
+      <source id="audioSource" src="song1.mp3" type="audio/mp3">
+  </audio>
+
+  <div class="russel">
+    <img src="images/RUSSEL.png" alt="RUSSEL">
+  </div>
+
+  <!-- Control Bar (progress bar, control buttons, volume) -->
+  <div class="control-bar">
+    <!-- Tombol Kontrol Kiri (Previous, Play/Pause, Next) -->
+    <div class="controls-left">
+      <div class="prev-btn" onclick="prevSong()"></div>
+      <div class="play-btn" onclick="playPause()"></div>
+      <div class="next-btn" onclick="nextSong()"></div>
+    </div>
+
+    <!-- Progress Bar -->
+    <input type="range" id="progressBar" value="0" min="0" max="100">
+
+    <!-- Tombol Kanan (Volume) -->
+    <div class="controls-right">
+        <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="0.5">
+    </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
